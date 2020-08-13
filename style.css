@@ -1,0 +1,99 @@
+body {
+  background: #eee;
+  text-align: center;
+  /* font-family: monospace; */
+  font-family: "Roboto", sans-serif;
+  margin-top: 20%;
+  font-size: 20px;
+}
+
+.container-page {
+  width: 100%;
+}
+
+.item_list {
+  display: inline-block;
+  padding-right: 30px;
+  margin: 0 auto;
+}
+.item_list a {
+  text-decoration: none;
+  color: #000000;
+}
+.item_list a:hover {
+  color: red;
+}
+
+/*  Insert */
+.container-page-add {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_input {
+  display: block;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+.container_submit {
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+/* view */
+.container-table {
+  width: 90%;
+  background: white;
+  margin: 50px auto;
+  box-shadow: 0 0 20px #333;
+
+  /* GRID */
+  display: grid;
+  /* Representa el numero de columnas de varias formas */
+  /* grid-template-columns: 100px 100px 100px 100px; */
+  /* grid-template-columns: repeat(4, 25%); */
+  grid-template-columns: repeat(4, 1fr);
+
+  /* Representa el alto de cada fila */
+  grid-auto-rows: 50px;
+
+  position: relative;
+}
+
+.table_title {
+  /* para determinar el ancho de una fila en especifico */
+  grid-column-start: 1;
+  grid-column-end: 5;
+
+  background: #000000;
+  color: white;
+  display: flex;
+  justify-content: center; /* alineacion horizontal */
+  align-items: center; /* alineacion vertical */
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.table_header,
+.table_item {
+  display: flex;
+  justify-content: center; /* alineacion horizontal */
+  align-items: center; /* alineacion vertical */
+}
+
+.table_header {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.table_item {
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+.table_title-edit{
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
