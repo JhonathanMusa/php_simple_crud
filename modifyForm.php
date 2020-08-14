@@ -2,7 +2,7 @@
 
 require_once "config.php";
 $id = $_GET['id'];
-$users = "SELECT * FROM users  WHERE user_id = '$id'";
+$users = "SELECT * FROM users  WHERE id_user = '$id'";
 
 ?>
 
@@ -16,7 +16,7 @@ $users = "SELECT * FROM users  WHERE user_id = '$id'";
 </head>
 <body>
 
-<form class="container-table container-table-edit" action="actionUpdate.php" method="post">
+<form class="container-page container-page-edit" action="actionUpdate.php" method="post">
       <div class="table_title table_title-edit ">User Information</div>
       <div class="table_header">Name</div>
       <div class="table_header">Last Name</div>
@@ -28,14 +28,15 @@ $users = "SELECT * FROM users  WHERE user_id = '$id'";
 while ($row = $result->fetch_assoc()) {
     ?>
 
-        <input type="hidden" class="table_item" value="<?php echo $row['name'] ?>" name="id">
+        <input type="hidden" class="table_item" value="<?php echo $row['id_user'] ?>" name="id">
         <input typwe="text" class="table_item" value="<?php echo $row['name'] ?>" name="name">
         <input typwe="text" class="table_item" value="<?php echo $row['lastName'] ?>" name="lname">
         <input typwe="text" class="table_item" value="<?php echo $row['address'] ?>" name="address">
         <input typwe="number" class="table_item" value="<?php echo $row['telephone'] ?>" name="telephone">
         <?php }
 $result->free();?>
-<input type="submit" value="Actualizar" class="container_submit container_submit-actualziar">
+<input type="submit" value="Actualizar" class="container_submit container_submit-edit">
     </form>
+    <a class="link_home" href="index.php">Home</a>
 </body>
 </html>

@@ -8,19 +8,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h2 class="container_title">Insert Information</h2>
+    <h2>Insert Information</h2>
     <div class="container-page container-page-add">
         <form action="insert.php" method="post">
-            <label for="">First Name</label>
-            <input type="text" class="container_input" name="name" />
-            <label for="">Last Name</label>
-            <input type="text" class="container_input" name="lname" />
-            <label for="">Address</label>
-            <input type="text" class="container_input" name="address" />
-            <label for="">Telephone</label>
-            <input type="text" class="container_input" name="telephone" />
-            <input type="submit" value="Insert" class="container_submit">
+            <label for="">First Name</label><br>
+            <input type="text" class="container_input" name="name" /><br>
+            <label for="">Last Name</label><br>
+            <input type="text" class="container_input" name="lname" /><br>
+            <label for="">Address</label><br>
+            <input type="text" class="container_input" name="address" /><br>
+            <label for="">Telephone</label><br>
+            <input type="text" class="container_input" name="telephone" /><br>
+            <input type="submit" value="Done!" class="container_submit">
         </form>
     </div>
+    <a class="link_home" href="index.php">Home</a>
 </body>
 </html>

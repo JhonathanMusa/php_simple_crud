@@ -14,7 +14,7 @@ $users = "SELECT * FROM users";
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container-table">
+<div class="container-view-page">
       <div class="table_title">User Information</div>
       <div class="table_header">Name</div>
       <div class="table_header">Last Name</div>
@@ -32,5 +32,6 @@ while ($row = $result->fetch_assoc()) {
         <?php }
 $result->free();?>
     </div>
+    <a class="link_home" href="index.php">Home</a>
 </body>
 </html>
