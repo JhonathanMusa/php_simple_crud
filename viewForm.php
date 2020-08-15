@@ -32,6 +32,6 @@ while ($row = $result->fetch_assoc()) {
         <?php }
 $result->free();?>
     </div>
-    <a class="link_home" href="index.php">Home</a>
+    <a class="link_home" href="home.php">Home</a>
 </body>
 </html>

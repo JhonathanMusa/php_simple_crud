@@ -9,7 +9,7 @@
 </head>
 <body>
     <h2>Insert Information</h2>
-    <div class="container-page container-page-add">
+    <div class="container-page-insert">
         <form action="insert.php" method="post">
             <label for="">First Name</label><br>
             <input type="text" class="container_input" name="name" /><br>
@@ -19,9 +19,9 @@
             <input type="text" class="container_input" name="address" /><br>
             <label for="">Telephone</label><br>
             <input type="text" class="container_input" name="telephone" /><br>
-            <input type="submit" value="Done!" class="container_submit">
+            <input type="submit" value="Done!" class="container_submit_insert">
         </form>
     </div>
-    <a class="link_home" href="index.php">Home</a>
+    <a class="link_home" href="home.php">Home</a>
 </body>
 </html>

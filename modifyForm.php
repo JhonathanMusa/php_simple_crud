@@ -16,7 +16,7 @@ $users = "SELECT * FROM users  WHERE id_user = '$id'";
 </head>
 <body>
 
-<form class="container-page container-page-edit" action="actionUpdate.php" method="post">
+<form class="container-page-edit" action="actionUpdate.php" method="post">
       <div class="table_title table_title-edit ">User Information</div>
       <div class="table_header">Name</div>
       <div class="table_header">Last Name</div>
@@ -35,8 +35,8 @@ while ($row = $result->fetch_assoc()) {
         <input typwe="number" class="table_item" value="<?php echo $row['telephone'] ?>" name="telephone">
         <?php }
 $result->free();?>
-<input type="submit" value="Actualizar" class="container_submit container_submit-edit">
+<input type="submit" value="Actualizar" class="container_submit-edit">
     </form>
-    <a class="link_home" href="index.php">Home</a>
+    <a class="link_home" href="home.php">Home</a>
 </body>
 </html>

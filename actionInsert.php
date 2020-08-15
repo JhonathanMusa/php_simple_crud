@@ -10,7 +10,7 @@ $telephone = $_POST['telephone'];
 $insert = "INSERT INTO users (name, lastName, address, telephone) VALUES ('$first_name', '$last_name', '$address', '$telephone') ";
 
 if ($connection->query($insert) === TRUE) {
-    echo "<script>alert('New Record inserted successfully'); window.location='/www/PHP/php_simple_crud/index.php'</script>";
+    echo "<script>alert('New Record inserted successfully'); window.location='/www/PHP/php_simple_crud/home.php'</script>";
 } else {
     echo "Failed to introduce new records";
 }
