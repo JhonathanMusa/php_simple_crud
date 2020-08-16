@@ -10,7 +10,7 @@
 <body>
     <h2>Insert Information</h2>
     <div class="container-page-insert">
-        <form action="insert.php" method="post">
+        <form action="actionInsert.php" method="post">
             <label for="">First Name</label><br>
             <input type="text" class="container_input" name="name" /><br>
             <label for="">Last Name</label><br>
