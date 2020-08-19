@@ -31,7 +31,7 @@ while ($row = $result->fetch_assoc()) {
         <div class="table_item"><?php echo $row['address'] ?></div>
         <div class="table_item"><?php echo $row['telephone'] ?></div>
         <div class="table_item">
-            <a href="modifyForm.php?id=<?php echo $row['id_user'] ?>" class="table_item_link">Modify</a> |
+            <a href="modifyForm.php?id=<?php echo $row['id_user'] ?>" class="table_mody_link">Modify</a> |
             <a href="actionDelete.php?id=<?php echo $row['id_user'] ?>" class="table_item_link">Delete</a>
         </div>
         <?php }

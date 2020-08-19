@@ -37,6 +37,7 @@ while ($row = $result->fetch_assoc()) {
 $result->free();?>
 <input type="submit" value="Actualizar" class="container_submit-edit">
     </form>
+    <a class="link_home" href="update.php">Back</a>
     <a class="link_home" href="home.php">Home</a>
 </body>
 </html>
