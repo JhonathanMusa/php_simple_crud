@@ -3,7 +3,7 @@
 require_once "config.php";
 
 $id = $_POST['id'];
-$first_name = $_POST['name'];
+$first_name = $_POST['fname'];
 $last_name = $_POST['lname'];
 $address = $_POST['address'];
 $telephone = $_POST['telephone'];
