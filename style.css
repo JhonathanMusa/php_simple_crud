@@ -7,7 +7,8 @@ body {
 /* HOME */
 .page-index {
   margin-top: 20%;
-  font-size: 40px;
+  font-size: 100px;
+  text-shadow: 2px 2px 0 #333;
 }
 
 .item_list {
@@ -40,11 +41,12 @@ body {
 
 .container-page-insert {
   width: 40%;
-  background: #ffffff;
+  background: linear-gradient(to right, rgb(119, 0, 255), rgb(0, 238, 255));
   margin: 50px auto;
   box-shadow: 0 0 20px #333;
   padding: 10px;
   border-radius: 15px;
+
 }
 
 .container_input {
@@ -54,12 +56,14 @@ body {
   margin-bottom: 10px;
   font-size: 1em;
   padding: 5px;
+  border: none;
   border-radius: 5px;
+  background-color: #eee;
 }
 
 .container_submit_insert {
   background: #000000;
-  color: #ffffff;
+  color: #eee;
   border: none;
   padding: 10px;
   margin: 15px auto;
@@ -74,7 +78,7 @@ body {
 /* VIEW */
 .container-view-page {
   width: 80%;
-  background: #ffffff;
+  background: linear-gradient(to right, rgb(119, 0, 255), rgb(0, 238, 255));
   margin: 50px auto;
   box-shadow: 0 0 20px #333;
 
@@ -97,6 +101,7 @@ body {
   align-items: center;
   font-weight: bold;
   font-size: 1.9em;
+  border-radius: 5px;
 }
 
 /* .table_header,
@@ -122,7 +127,7 @@ body {
 
 .container-page-edit {
   width: 80%;
-  background: #ffffff;
+  background: linear-gradient(to right, rgb(119, 0, 255), rgb(0, 238, 255));
   margin: 50px auto;
   box-shadow: 0 0 20px #333;
 
