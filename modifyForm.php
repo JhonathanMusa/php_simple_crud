@@ -29,7 +29,7 @@ while ($row = $result->fetch_assoc()) {
     ?>
 
         <input type="hidden" class="table_item" value="<?php echo $row['id_user'] ?>" name="id">
-        <input typwe="text" class="table_item" value="<?php echo $row['name'] ?>" name="name">
+        <input typwe="text" class="table_item" value="<?php echo $row['name'] ?>" name="fname">
         <input typwe="text" class="table_item" value="<?php echo $row['lastName'] ?>" name="lname">
         <input typwe="text" class="table_item" value="<?php echo $row['address'] ?>" name="address">
         <input typwe="number" class="table_item" value="<?php echo $row['telephone'] ?>" name="telephone">

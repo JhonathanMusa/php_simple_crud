@@ -11,4 +11,12 @@ if ($connection->connect_error) {
     echo "failed to connect with the server";
 }
 
-
+function queryMysql($query)
+{
+    global $connection;
+    $result = $connection->query($query);
+    if (!$result) {
+        die("Fatla error" . $connection->connect_error);
+    }
+    return $result;
+}
