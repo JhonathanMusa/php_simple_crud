@@ -8,7 +8,10 @@ body {
 .page-index {
   margin-top: 20%;
   font-size: 100px;
-  text-shadow: 2px 2px 0 #333;
+  /* text-shadow: 2px 2px 0 #333; */
+  background: linear-gradient(to right, rgb(119, 0, 255), rgb(0, 238, 255));
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .item_list {
@@ -19,20 +22,24 @@ body {
 
 .item_list a {
   text-decoration: none;
+  font-weight: bold;
   color: #000000;
 }
 
 .item_list a:hover {
   color: red;
+  font-weight: bold;
 }
 
 .link_home {
   text-decoration: none;
   color: #000000;
+  font-weight: bold;
 }
 
 .link_home:hover {
   color: red;
+  font-weight: bold;
 }
 
 /* END HOME */
@@ -46,7 +53,6 @@ body {
   box-shadow: 0 0 20px #333;
   padding: 10px;
   border-radius: 15px;
-
 }
 
 .container_input {
