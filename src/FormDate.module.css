@@ -1,0 +1,31 @@
+
+.MainContainer{
+    width: 80%;
+    margin: auto;
+}
+
+.FormContainer{
+    text-align: center;
+}
+
+.InputDate{
+    color: #333;
+    height: 30px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.TableWith{
+    min-width: 650;
+}
+
+.BtnFilter{
+    background-color: #73BF8E;
+    color: #fff;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    width: 100px;
+    cursor: pointer;
+}
